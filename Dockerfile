@@ -15,4 +15,6 @@ RUN go build oragono.go
 
 COPY run.sh /go/src/github.com/oragono/oragono
 
+COPY ircd.yaml .
+
 CMD ["./run.sh"]
