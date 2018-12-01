@@ -6,6 +6,8 @@ if [ ! -f ./ircd.yaml ]; then
   cp oragono.yaml ircd.yaml
 fi
 
+./oragono genpasswd
+
 if [ ! -f ircd.db ]; then
   ./oragono initdb
 fi
