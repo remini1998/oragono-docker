@@ -9,7 +9,7 @@ WORKDIR /go/src/github.com/oragono
 
 RUN git clone https://github.com/oragono/oragono.git
 WORKDIR /go/src/github.com/oragono/oragono
-RUN git checkout v0.8.2
+RUN git checkout sta
 RUN git submodule update --init
 RUN go build oragono.go
 
